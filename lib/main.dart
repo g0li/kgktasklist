@@ -49,7 +49,10 @@ class _MyHomePageState extends State<MyHomePage> {
             decoration: const InputDecoration(hintText: 'Enter Item'),
             onFieldSubmitted: (_) => addItemm(),
           ),
-          Text(list.map((e) => e.index.toString()).toList().toString()),
+          Text(list
+              .map((e) => e.index.toString())
+              .toList()
+              .toString()), // added thhis to visualise implementation
           Expanded(
             child: ListView.builder(
                 shrinkWrap: true,
